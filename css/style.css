@@ -50,14 +50,17 @@ header .theme-btn .round {
     align-items: center;
     gap: 20px;
 }
+.profile-img{
+    position: relative;
+}
 .img-bg {
     background: linear-gradient(242deg, #969DC9, #E4E4E4);
     width: 397px;
-    height: 398px;
+    height: 406px;
     position: absolute;
     border-radius: 3px 0px 200px 200px;
-    bottom: 18px;
-    left: 76px;
+    bottom: -6px;
+    left: -8px;
     z-index: -1;
     filter: drop-shadow(-7px 6px 7px #7242a84c);
 }
