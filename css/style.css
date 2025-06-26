@@ -1,0 +1,74 @@
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+body {
+    background-color: #FFFFEF;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav {
+    gap: 70px;
+    display: flex;
+    padding: 6px 21px;
+    background-color: #F5F5F0;
+    width: fit-content;
+    border-radius: 10px;
+    justify-self: center;
+}
+header .theme-btn {
+    padding: 3px 4px;
+    display: flex;
+    background-color: #F3F3F5;
+    position: relative;
+    right: -23%;
+    border-radius: 87px;
+    gap: 8px;
+    box-shadow: inset 1px 2px 1px -1px rgba(107, 107, 107, 0.767);
+}
+header .theme-btn .round {
+    width: 18px;
+    height: 18px;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    filter: drop-shadow(2px 2px 1px #6363635b);
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.img-bg {
+    background: linear-gradient(242deg, #969DC9, #E4E4E4);
+    width: 397px;
+    height: 398px;
+    position: absolute;
+    border-radius: 3px 0px 200px 200px;
+    bottom: 18px;
+    left: 76px;
+    z-index: -1;
+    filter: drop-shadow(-7px 6px 7px #7242a84c);
+}
+.resume-btn {
+    padding: 5px 12px;
+    border-radius: 80px;
+    color: white;
+    background: linear-gradient(45deg, #C994FF, #C6B3FF);
+}
+.hero-cnt div h1{
+    background: linear-gradient(90deg, #874BB5, #87CFB7);
+    color: transparent;
+    background-clip: text;
+}
