@@ -5,6 +5,7 @@ a{
 }
 body {
     background-color: #FFFFEF;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -45,11 +46,7 @@ header .theme-btn .round {
     border-radius: 100%;
     filter: drop-shadow(2px 2px 1px #6363635b);
 }
-.hero{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 .profile-img{
     position: relative;
 }
@@ -74,4 +71,13 @@ header .theme-btn .round {
     background: linear-gradient(90deg, #874BB5, #87CFB7);
     color: transparent;
     background-clip: text;
+}
+.hero-cnt {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero{
+    margin-top: 70px;
 }
