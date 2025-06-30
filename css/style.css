@@ -113,11 +113,83 @@ header .theme-btn .round {
     align-items: center;
     justify-content: space-evenly;
     background-color: #f5f7ff;
-    z-index: -8;
-    position: absolute;
-    bottom: 8px;
     width: -webkit-fill-available;
+    margin-top: 60px;
 }
 .skill-line img{
     width: 2%;
+}
+.about{
+    position: relative;
+}
+.abt-img img{
+    width: 100%;
+}
+.abt-cnt {
+    position: absolute;
+    top: 36%;
+    width: 74%;
+    justify-self: center;
+    background-color: #ffffff0f;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: inset 1px 2px 1px -1px rgb(224 223 223 / 70%), 3px 3px 10px 0px rgb(0, 0, 0, 10%);
+    color: #FFFFEF;
+    backdrop-filter: blur(2px);
+    z-index: 100;
+}
+.abt-cnt h2{
+    font-size: 54px;
+}
+.abt-cnt p {
+    font-size: 25px;
+    font-style: italic;
+}
+.about .logo-img{
+    position: absolute;
+}
+.figma {
+    top: 200px;
+    right: 599px;
+    rotate: -37deg;
+    scale: 0.9;
+}
+.css {
+    top: 122px;
+    right: 401px;
+    rotate: 43deg;
+    scale: 0.8;
+}
+.bootstrap {
+    top: 200px;
+    right: 100px;
+    rotate: 12deg;
+    scale: 1.1;
+}
+.html {
+    top: 128px;
+    left: 95px;
+    rotate: -41deg;
+    scale: 1.1;
+}
+.js {
+    top: 417px;
+    right: 662px;
+    rotate: -60deg;
+}
+.photoshop {
+    top: 373px;
+    right: 430px;
+    rotate: 30deg;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tools img{
+    scale: 0.4;
+}
+.service .rsp-dsg{
+    width: 100%;
 }
