@@ -247,7 +247,9 @@ header .theme-btn .round {
     margin: 30px 0px;
     color: white;
 }
-         
+.service img{
+    height: fit-content;
+}         
 .responsive {
     grid-column: span 3 / span 3;
     grid-row: span 6 / span 6;
@@ -276,7 +278,7 @@ header .theme-btn .round {
     background: #0000007e;
     border-radius: 15px;
 }
-.div5 {
+.coding {
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     grid-column-start: 8;
@@ -292,7 +294,7 @@ header .theme-btn .round {
     margin: 30px 0px;
 }
 .service h3 , .service p{
-    width: max-content;
+    width: fit-content;
     font-family: "Poppins", sans-serif;
 }
 .service h3{
@@ -303,16 +305,24 @@ header .theme-btn .round {
     font-size: 13px;
     font-style: italic;
 }
-.responsive, .prototyp, .dsgn-thnk, .ux-research{
+.responsive, .prototyp, .dsgn-thnk, .ux-research, .coding{
     position: relative;
 }
-.responsive-cnt, .prototyp-cnt, .dsgn-thnk-cnt, .ux-research-cnt{
+.responsive-cnt, .prototyp-cnt, .dsgn-thnk-cnt, .ux-research-cnt, .coding-cnt{
     padding: 7px;
+    margin-left: 5px;
 }
-.responsive-icon, .prototyp-icon, .dsgn-thnk-icon, .ux-research-icon{
-    width: 44px;
-    justify-self: center;
-    margin-top: 100px;
+.responsive-icon {
+    margin-top: 20px;
+    align-items: center;
+    gap: 7px;
+    margin-left: 10px;
+}
+.prototyp-icon, .dsgn-thnk-icon, .ux-research-icon, .coding-icon{
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
 }
 .responsive-bg {
     position: absolute;
