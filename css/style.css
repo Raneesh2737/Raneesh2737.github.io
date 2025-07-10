@@ -463,7 +463,6 @@ header .theme-btn .round {
     scale: 1.3;
 }
 .call-mail {
-    display: flex;
     flex-direction: column;
     gap: 30px;
 }

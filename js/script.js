@@ -1,3 +1,3 @@
 $('scroll-bt').click(function(){
-    $('html').scrollTop(0);
+    $('html').scrolltop(0);
 })
