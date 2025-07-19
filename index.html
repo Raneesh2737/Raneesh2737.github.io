@@ -28,7 +28,7 @@
     </div>
     <!-- header -->
     <header>
-        <nav>
+        <nav  data-aos="flip-down">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Skills</a>
@@ -52,7 +52,9 @@
             <div class="hero">
                 <div class="row rsp">
                     <div class="col-md-6 col-6">
-                        <div class="profile-img">
+                        <div class="profile-img" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                             <div class="img-bg"></div>
                             <img src="img/profile-img.png" alt="">
                         </div>
@@ -68,7 +70,8 @@
                                     <h1 class="text">UI/UX DEVELEPOR</h1>
                                 </div>
                             </div>
-                            <div class="buttons">
+                            <div class="buttons" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
                                 <a class="resume" href="#">
                                     <p>Resume</p>
                                 </a>
@@ -122,25 +125,32 @@
                         contribute to your team's success, and grow within a creative and collaborative environment.
                     </p>
                 </div>
-                <div class="abt-img">
+                <div class="abt-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/about-bg-Wave.png" alt="about img-bg">
                 </div>
-                <div class="figma logo-img">
+                <div class="figma logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/figma-logo.png" alt="logo">
                 </div>
-                <div class="photoshop logo-img">
+                <div class="photoshop logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/photoshop-logo.png" alt="logo">
                 </div>
-                <div class="css logo-img">
+                <div class="css logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/css-logo.png" alt="logo">
                 </div>
-                <div class="bootstrap logo-img">
+                <div class="bootstrap logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/bootstrap-logo.png" alt="logo">
                 </div>
-                <div class="js logo-img">
+                <div class="js logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/js-logo.png" alt="logo">
                 </div>
-                <div class="html logo-img">
+                <div class="html logo-img" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <img src="img/html-logo.png" alt="logo">
                 </div>
 
@@ -150,7 +160,8 @@
 
     <!-- tools-section -->
     <section>
-        <div class="tools">
+        <div class="container">
+            <div class="tools">
             <div data-aos="zoom-in-down">
                 <img src="img/icon/figma-skill-logo.png" alt="icon">
             </div>
@@ -170,12 +181,14 @@
                 <img src="img/icon/css-skill-logo.png" alt="icon">
             </div>
         </div>
+        </div>
+        
     </section>
 
     <!-- education-section -->
     <section id="edu">
         <div class="container">
-            <div class="edu">
+            <div class="edu" data-aos="zoom-out-down">
                 <h2>My Education</h2>
                 <img src="img/education-roadmap.png" alt="edu-road">
             </div>
@@ -202,7 +215,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="zoom-in-up">
                                 <div class="prototyp">
                                     <div class="prototyp-icon d-flex">
                                         <img src="img/proto-icon.png" width="35px" alt="">
@@ -216,7 +229,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6"  data-aos="zoom-in-up">
                                 <div class="dsgn-thnk">
                                     <div class="dsgn-thnk-icon d-flex">
                                         <img src="img/dsgn-icon.png" width="35px" alt="">
@@ -231,7 +244,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6"  data-aos="zoom-in-up">
                                 <div class="ux-research">
                                     <div class="ux-research-icon d-flex">
                                         <img src="img/ux-rsrch-icon.png" width="35px" alt="">
@@ -247,7 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6"  data-aos="zoom-in-up">
                                 <div class="coding">
                                     <div class="coding-icon d-flex">
                                         <img src="img/coding-icon.png" width="35px" alt="">
@@ -403,9 +416,6 @@
             </div>
         </div>
     </section>
-
-
-
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
