@@ -16,6 +16,43 @@
         position: relative;
         left: 60px;
     }
+    .skill-line {
+    width: max-content;
+    }
+    .abt-cnt {
+    width: 100%;
+    top: 12%;
+    }
+    .abt-img {
+        scale: 1.3;
+    }
+    .logo-img{
+        scale: 0.9;
+    }
+    .figma {
+    right: 632px;
+    }
+    .js {
+    top: 355px;
+    right: 258px;
+    }
+    .photoshop {
+    top: 200px;
+    right: 230px;
+    }
+    .css {
+    top: 15px;
+    right: 200px;
+    }
+    .bootstrap {
+    right: -55px;
+    }
+    .html{
+        top: 0px;
+    }
+    #edu img {
+    width: 100%;
+    }
 }
 
 @media screen and (max-width:767px) {

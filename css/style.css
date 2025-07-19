@@ -205,10 +205,10 @@ header .theme-btn .round {
 }
 .abt-cnt {
     position: absolute;
-    top: 36%;
+    top: 30%;
     width: 74%;
     justify-self: center;
-    background-color: #ffffff0f;
+    background-color: #00000036;
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: inset 1px 2px 1px -1px rgb(224 223 223 / 70%), 3px 3px 10px 0px rgb(0, 0, 0, 10%);
@@ -220,7 +220,7 @@ header .theme-btn .round {
     font-size: 54px;
 }
 .abt-cnt p {
-    font-size: 25px;
+    font-size: 21px;
     font-style: italic;
 }
 .about .logo-img{
@@ -237,12 +237,14 @@ header .theme-btn .round {
     right: 401px;
     rotate: 43deg;
     scale: 0.8;
+    z-index: 100;
 }
 .bootstrap {
     top: 200px;
     right: 100px;
     rotate: 12deg;
     scale: 1.1;
+    z-index: 100;
 }
 .html {
     top: 128px;
@@ -268,6 +270,13 @@ header .theme-btn .round {
 .tools img{
     scale: 0.4;
 }
+.tools div{
+    transition: 2s linear;
+}
+.tools div:hover {
+    transform: rotateY(180deg);
+    box-shadow: -3px 10px 20px 0px #8a8a8a4f;
+}
 .edu {
     display: flex;
     flex-direction: column;
@@ -275,6 +284,13 @@ header .theme-btn .round {
 }
 #edu img{
     width: 90%;
+}
+.tools div {
+    background: #7c7c7c4f;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    border-radius: 8px;
 }
 .Skill-grid {
     display: grid;
@@ -285,9 +301,10 @@ header .theme-btn .round {
     margin: 30px 0px;
     color: white;
 }
-.Skill img{
+.Skill img {
     height: fit-content;
-}         
+    filter: grayscale(0.9);
+}      
 .responsive {
     grid-column: span 3 / span 3;
     grid-row: span 6 / span 6;
@@ -339,12 +356,14 @@ header .theme-btn .round {
     font-size: 22px;
     font-weight: 500;
 }
-.Skill p{
+.Skill p {
     font-size: 13px;
     font-style: italic;
+    width: 200px;
 }
 .responsive, .prototyp, .dsgn-thnk, .ux-research, .coding{
     position: relative;
+    overflow: hidden;
 }
 .responsive-cnt, .prototyp-cnt, .dsgn-thnk-cnt, .ux-research-cnt, .coding-cnt{
     padding: 7px;
@@ -549,4 +568,16 @@ section{
 .menu-bt.toggled div:nth-child(3){
     transform: rotate(-45deg);
     bottom: 6px;
+}
+.coding-bg {
+    scale: 0.6;
+    position: absolute;
+    bottom: -71px;
+    right: 0;
+    left: 0;
+}
+.dsgn-thnk-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
