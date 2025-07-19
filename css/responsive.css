@@ -16,42 +16,53 @@
         position: relative;
         left: 60px;
     }
+
     .skill-line {
-    width: max-content;
+        width: max-content;
     }
+
     .abt-cnt {
-    width: 100%;
-    top: 12%;
+        width: 100%;
+        top: 12%;
     }
+
     .abt-img {
         scale: 1.3;
     }
-    .logo-img{
+
+    .logo-img {
         scale: 0.9;
     }
+
     .figma {
-    right: 632px;
+        right: 632px;
     }
+
     .js {
-    top: 355px;
-    right: 258px;
+        top: 355px;
+        right: 258px;
     }
+
     .photoshop {
-    top: 200px;
-    right: 230px;
+        top: 200px;
+        right: 230px;
     }
+
     .css {
-    top: 15px;
-    right: 200px;
+        top: 15px;
+        right: 200px;
     }
+
     .bootstrap {
-    right: -55px;
+        right: -55px;
     }
-    .html{
+
+    .html {
         top: 0px;
     }
+
     #edu img {
-    width: 100%;
+        width: 100%;
     }
 }
 
@@ -90,10 +101,104 @@
         opacity: 0;
     }
 
+    .connect {
+        width: 95vw;
+    }
+
+    .connect-logo {
+        width: -webkit-fill-available;
+    }
+
+    .responsive-bg, .dsgn-thnk-bg, .coding-bg, .ux-research-bg, .prototyp-bg {
+        display: none;
+    }
+
+    .about .logo-img {
+        display: none;
+    }
+
+    .abt-cnt p {
+        font-size: 14px;
+    }
+
+    .skill-line {
+        width: fit-content;
+    }
+
+    .tools div {
+        height: 64px;
+        width: auto;
+        justify-content: space-between;
+    }
+    .responsive, .prototyp, .dsgn-thnk, .ux-research, .coding {
+    height: -webkit-fill-available;
+    margin-top: 10px;
+    }
+    .responsive{
+    width: 71vh;
+    position: relative;
+    right: -11px;
+    }
+
+
 }
 
-@media screen and (max-width:575px) {}
+@media screen and (max-width:575px) {
+    
+}
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    .skill-line {
+        display: none;
+    }
+
+    .img-bg {
+        display: none;
+    }
+
+    .abt-cnt p {
+        font-size: 12px;
+    }
+
+    .abt-cnt {
+        top: 0;
+        backdrop-filter: brightness(0.5);
+        position: relative;
+    }
+
+    .abt-img {
+        display: none;
+    }
+
+    .rsp {
+        flex-direction: column;
+    }
+
+    .hero-cnt {
+        width: max-content;
+        display: flex;
+        gap: 75px;
+        position: relative;
+        left: 25px;
+    }
+
+    .box {
+        scale: 0.7;
+        width: 541px;
+        height: 74px;
+        position: absolute;
+        left: -84px;
+    }
+    .responsive, .prototyp, .dsgn-thnk, .ux-research, .coding {
+    height: -webkit-fill-available;
+    margin-top: 10px;
+    }
+    .responsive{
+    width: 71vh;
+    position: relative;
+    right: -11px;
+    }
+    
+}
 
 @media screen and (max-width:375px) {}

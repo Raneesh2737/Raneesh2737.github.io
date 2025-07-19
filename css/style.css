@@ -77,13 +77,23 @@ header .theme-btn .round {
     font-style: italic;
     font-size: 18px;
 }
-.resume p{
+.resume{
     width: fit-content;
     padding: 5px 12px;
     border-radius: 80px;
     color: white;
     background: linear-gradient(45deg, #C994FF, #C6B3FF);
+    transition: 1s ease;
+
 }
+.resume:hover{
+    background: white;
+    color: transparent;
+    background: linear-gradient(45deg, #C994FF, #C6B3FF);
+    background-clip: text;
+    border: 1px solid #C994FF;  
+}
+
 .hire{
     width: fit-content;
     padding: 5px 12px;
@@ -91,8 +101,12 @@ header .theme-btn .round {
     color: transparent;
     background: linear-gradient(45deg, #C994FF, #C6B3FF);
     background-clip: text;
-    border: 1px solid #C994FF;
-    
+    border: 1px solid #C994FF;    
+    transition: 1s ease;
+}
+.hire:hover{
+    color: white;
+    background: linear-gradient(45deg, #C994FF, #C6B3FF);
 }
 .hero-cnt {
     display: flex;
@@ -197,8 +211,9 @@ header .theme-btn .round {
     transform: translateX(-100%);
     }    
 }
-.about{
+.about {
     position: relative;
+    z-index: 90;
 }
 .abt-img img{
     width: 100%;
@@ -273,9 +288,10 @@ header .theme-btn .round {
 .tools div{
     transition: 2s linear;
 }
-.tools div:hover {
-    transform: rotateY(180deg);
-    box-shadow: -3px 10px 20px 0px #8a8a8a4f;
+.tools:hover>:not(:hover) {
+    /* transform: rotateY(180deg);
+    box-shadow: -3px 10px 20px 0px #8a8a8a4f; */
+    scale: 0.9;
 }
 .edu {
     display: flex;
@@ -292,55 +308,12 @@ header .theme-btn .round {
     display: flex;
     border-radius: 8px;
 }
-.Skill-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
-    height: 80vh;
-    margin: 30px 0px;
-    color: white;
-}
+
 .Skill img {
     height: fit-content;
-    filter: grayscale(0.9);
+    filter: grayscale(1);
 }      
-.responsive {
-    grid-column: span 3 / span 3;
-    grid-row: span 6 / span 6;
-    background: #0000007e;
-    border-radius: 15px;
-}
-.prototyp {
-    grid-column: span 5 / span 5;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    background: #0000007e;
-    border-radius: 15px;
-}
-.dsgn-thnk {
-    grid-column: span 4 / span 4;
-    grid-row: span 3 / span 3;
-    grid-column-start: 9;
-    background: #0000007e;
-    border-radius: 15px;
-}
-.ux-research {
-    grid-column: span 4 / span 4;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 4;
-    background: #0000007e;
-    border-radius: 15px;
-}
-.coding {
-    grid-column: span 5 / span 5;
-    grid-row: span 3 / span 3;
-    grid-column-start: 8;
-    grid-row-start: 4;
-    background: #0000007e;
-    border-radius: 15px;
-}
+
 .Skill h2, .edu h2{
     font-size: 44px;
     font-weight: 500;
@@ -364,10 +337,22 @@ header .theme-btn .round {
 .responsive, .prototyp, .dsgn-thnk, .ux-research, .coding{
     position: relative;
     overflow: hidden;
+    height: 40vh;
+    background: #0000007e;
+    border-radius: 15px;
+    color: white;
+
+
+}
+.responsive{
+    height: 82vh;
 }
 .responsive-cnt, .prototyp-cnt, .dsgn-thnk-cnt, .ux-research-cnt, .coding-cnt{
     padding: 7px;
     margin-left: 5px;
+}
+.ux-research, .coding{
+    margin-top: 2vh;
 }
 .responsive-icon {
     margin-top: 20px;
@@ -497,6 +482,7 @@ header .theme-btn .round {
     padding: 30px 0px;
     background: hsla(0, 0%, 100%, 0.142);
     border-radius: 8px;
+    transition: 0.7s linear;
 
 }
 .connect-logo div{
@@ -580,4 +566,20 @@ section{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.prototyp-bg {
+    width: fit-content;
+    position: absolute;
+    right: 18px;
+    scale: 1.4;
+}
+.ux-research-bg {
+    position: absolute;
+    top: -19px;
+    right: -78px;
+    scale: 0.8;
+    rotate: 44deg;
+}
+.connect-logo:hover>:not(:hover) {
+ opacity: 0.5;
 }
