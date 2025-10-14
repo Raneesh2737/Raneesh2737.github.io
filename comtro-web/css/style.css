@@ -6,6 +6,10 @@ a {
     color: white;
     text-decoration: none;
 }
+*::selection{
+    color: #3c1d60;
+    background: white;
+}
 
 ul {
     margin: 0;
