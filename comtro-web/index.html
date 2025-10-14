@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comtro</title>
+    <link rel="icon" type="icon/image" href="Assets/icon/comtro-logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+</head>
+
+<body>
+    <!-- header-section -->
+    <header class="d-flex">
+        <div class="logo">
+            <img src="Assets/icon/comtro-logo.svg" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
+            </ul>
+        </nav>
+        <div class="cta-btn">
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <!-- hero-section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-md-7">
+                    <div class="hero-content">
+                        <h3>Start Announcements & Bells</h3>
+                        <h1>For Schools</h1>
+                        <p>Control announcement , bells and emergency alerts from one mobile app</p>
+                    </div>
+                    <div class="hero-cta">
+                        <a class="cta-btn" href="#">Request a Demo</a>
+                        <a href="#"><i class="fa-brands fa-google-play" style="color: #fafafa;"></i></a>
+                        <a href="#"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="hero-img">
+                        <img src="Assets/img/hero-img.jpg" alt="hero-img" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-section -->
+    <section class="about-section">
+        <div class="about-title" id="about-title"></div>
+        <div class="about-content" id="about-content"></div>
+        <div class="about-label" id="about-label"></div>
+        <div class="progress-bar-steps">
+            <div class="progress-highlight" id="progress-highlight"></div>
+        </div>
+    </section>
+    <!-- features-section -->
+    <section id="Features">
+        <div class="container">
+            <div class="features">
+                <h2>Features</h2>
+                <div class="row g-2">
+                    <div class="col-md-6">
+                        <div class="feature announcment">
+                            <div class="title">
+                                <i class="fa-solid fa-volume-high"></i>
+                                <h4>Announcement</h4>
+                            </div>
+                            <p>Record | Schedule | Live</p>
+                            <div class="img announcement">
+                                <img src="Assets/img/feature-announcement.png" alt="feature-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature bells">
+                            <div class="title">
+                                <i class="fa-solid fa-globe"></i>
+                                <h4>Automated Bells</h4>
+                            </div>
+                            <p>Custom Timing | Exam , Holiday Modes</p>
+                            <div class="img bells">
+                                <img src="Assets/img/features-bells.png" alt="feature-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature alerts">
+                            <div class="title">
+                                <i class="fa-solid fa-bolt"></i>
+                                <h4>Emergency Alerts</h4>
+                            </div>
+                            <p>Instant One - Tap Broadcast</p>
+                            <div class="img alerts">
+                                <img src="Assets/img/features-alerts.png" alt="feature-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature reports">
+                            <div class="title">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <h4>Reports and Logs</h4>
+                            </div>
+                            <p>History | Playback</p>
+                            <div class="img reports">
+                                <img src="Assets/img/features-reports.png" alt="feature-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how-it-works -->
+    <section id="how-it-works" class="py-5 text-center text-light">
+        <div class="container">
+            <h2 class>How It Works</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <img id="phoneImage" src="Assets/img/login-hiw.png" alt="Phone Mockup"
+                        class="img-fluid animated-phone">
+                </div>
+                <div class="col-md-6">
+                    <h3 id="stepTitle">Quick & Secure Login</h3>
+                    <p id="stepText">Access your account in seconds with a simple, protected login process.</p>
+
+                    <div class="steps mt-4">
+                        <button class="step-btn active" data-step="0">Log In</button>
+                        <button class="step-btn" data-step="1">Choose classrooms</button>
+                        <button class="step-btn" data-step="2">Record/Select message</button>
+                        <button class="step-btn" data-step="3">Schedule/Broadcast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jst-click -->
+    <section id="jst-click">
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-md-6">
+                    <div class="mockup-img">
+                        <img src="Assets/img/2-phn-mckup.png" alt="mock-up-img">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Announcements and Bells Just a Click Away</h3>
+                    <div class="key-points">
+                        <div class="points 1">
+                            <div class="icon">
+                                <img src="Assets/icon/Atom.svg" alt="atom">
+                            </div>
+                            <div class="point-text">
+                                <h4>Easy to use</h4>
+                                <p>Simple controls, smooth navigation, and instant access to every feature.</p>
+                            </div>
+                        </div>
+                        <div class="points 2">
+                            <div class="icon">
+                                <img src="Assets/icon/ChartPolar.svg" alt="ChartPolar">
+                            </div>
+                            <div class="point-text">
+                                <h4>Monitor and Manage</h4>
+                                <p>Keep track of every announcement and control schedules from one place.</p>
+                            </div>
+                        </div>
+                        <div class="points 2">
+                            <div class="icon">
+                                <img src="Assets/icon/HeadCircuit.svg" alt="head-ciruit">
+                            </div>
+                            <div class="point-text">
+                                <h4>Smart Control</h4>
+                                <p>Let the system handle the timing so you can focus on what matters most.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- app-demo -->
+    <section id="app-demo">
+        <div class="container">
+            <h2>App Demo</h2>
+            <ul class="app-demo">
+                <li>
+                    <img src="Assets/img/Loading-page.png" alt="Loading-page">
+                </li>
+                <li>
+                    <img src="Assets/img/main-Home-page.png" alt="main-home-page">
+                </li>
+                <li>
+                    <img src="Assets/img/main-Home-page-1.png" alt="main-home-page-1">
+                </li>
+                <li>
+                    <img src="Assets/img/Classs-selection-worl-out.png" alt="Classs-selection-worl-out">
+                </li>
+                <li>
+                    <img src="Assets/img/Classs-selection-worl-out-1.png" alt="Classs-selection-worl-out-1">
+                </li>
+                <li>
+                    <img src="Assets/img/RECORDING.png" alt="RECORDING">
+                </li>
+                <li>
+                    <img src="Assets/img/conformation.png" alt="conformation">
+                </li>
+                <li>
+                    <img src="Assets/img/sound-file.png" alt="sound-file">
+                </li>
+                <li>
+                    <img src="Assets/img/modes.png" alt="modes">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <!-- <div class="container"> -->
+        <footer>
+            <h2>Ready to Control Your Sound with Comtro?</h2>
+            <h3>Comtro's app-powered speakers let you adjust bells , Announcements and set the mode-effortlessly,
+                from anywhere and anytime.</h3>
+            <div class="call-cta-btn">
+                <i class="fa-solid fa-phone"></i>
+                <p>Schedule a free call</p>
+            </div>
+            <div class="bottom-navbar">
+                <div class="logo">
+                    <img src="Assets/icon/comtro-logo.svg" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How It Works</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bg-img">
+                <img src="Assets/img/comtro-1-footer.svg" alt="footer-bg-img">
+            </div>
+        </footer>
+        <!-- </div> -->
+    </section>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</body>
+
+</html>
