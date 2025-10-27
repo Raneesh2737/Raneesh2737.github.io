@@ -23,6 +23,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FAFAFA;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* loading */
 #page-loader {
