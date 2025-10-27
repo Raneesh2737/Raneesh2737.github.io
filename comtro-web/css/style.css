@@ -24,6 +24,59 @@ body {
     background-color: #FAFAFA;
 }
 
+/* loading */
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background: radial-gradient(#815CE4, #47337E);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #ffffff;
+  text-align: center;
+}
+#page-loader h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/* Bouncing dots */
+.dots-loader {
+  display: flex;
+  gap: 8px;
+}
+
+.dots-loader span {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+.dots-loader span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.dots-loader span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* #fdfdf6 */
 header {
     font-family: "Poppins", sans-serif;
